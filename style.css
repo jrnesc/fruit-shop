@@ -1,0 +1,160 @@
+html {
+    box-sizing: border-box;
+}
+  
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff8ee;
+}
+
+
+nav {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+.search-container {
+    display: flex;
+    padding: 10px 20px;
+}
+
+.search-form {
+    margin-left: auto;
+}
+
+
+.logo {
+    display: flex;
+    height: 217px;
+    width: 217px;
+    margin-left: 260%;
+}
+
+.cart_icon {
+    display: flex;
+    height: 30px;
+    width: 30px;
+}
+
+
+.main_product {
+    display: none;
+}
+
+.main_product:first-child {
+    display: block;
+}
+
+.carousel {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.small_product_row {
+    display: flex;
+    max-width: 1043px;
+    margin:auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.small_product_column {
+    width: 33.33%;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    padding: 20px;
+    background-color: #A9A9A9;
+}
+
+.external-links ul {
+    list-style: none;
+}
+
+.contact-form-container {
+    margin-left: auto;
+}
+
+.contact-form-container h3 {
+    text-align: right;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-form input {
+    display: block;
+    margin-bottom: 5px;
+}
