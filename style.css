@@ -49,9 +49,9 @@ nav {
 
 .logo {
     display: flex;
-    height: 217px;
-    width: 217px;
-    margin-left: 260%;
+    height: 100px;
+    width: 100px;
+   padding-bottom: 30px;
 }
 
 .cart_icon {
